@@ -1,4 +1,4 @@
-[[ `uname -s` != CYGWIN* ]] && source /opt/boxen/env.sh
+#[[ `uname -s` != CYGWIN* ]] && source /opt/boxen/env.sh
 
 
 

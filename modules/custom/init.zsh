@@ -12,7 +12,14 @@ if [[ -a ~/.localrc ]]
 
 source ~/.dotfiles/system/aliases.zsh
 
+
 export EDITOR='vim'
 export VISUAL='vim'
+
+# custom brewfile stuff
+export HOMEBREW_BREWFILE=~/.dotfiles/Brewfile
+if [ -f $(brew --prefix)/etc/brew-wrap ];then
+  source $(brew --prefix)/etc/brew-wrap
+fi
 
 
