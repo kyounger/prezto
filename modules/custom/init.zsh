@@ -25,3 +25,4 @@ fi
 
 bindkey 'OA' up-line-or-search
 bindkey 'OB' down-line-or-search
+setopt IGNORE_EOF
