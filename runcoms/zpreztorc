@@ -39,7 +39,8 @@ zstyle ':prezto:load' pmodule \
     'completion' \
     'git' \
     'prompt' \
-    'custom'
+    'custom' \
+    'sdkman'
 
 #
 # Autosuggestions
