@@ -38,6 +38,7 @@ zstyle ':prezto:load' pmodule \
     'utility' \
     'completion' \
     'git' \
+	'history-substring-search' \
     'prompt' \
     'custom' \
     'sdkman'
@@ -96,6 +97,9 @@ zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # Set the search globbing flags.
 # zstyle ':prezto:module:history-substring-search' globbing-flags ''
+
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
 
 #
 # macOS
