@@ -15,11 +15,8 @@ export EDITOR='vim'
 export VISUAL='vim'
 
 if [[ "$(uname)" == "Darwin" ]]; then
-    # custom brewfile stuff
-    export HOMEBREW_BREWFILE=~/.dotfiles/Brewfile
-
     if [ -f $(brew --prefix)/etc/brew-wrap ]; then
-    source $(brew --prefix)/etc/brew-wrap
+        source $(brew --prefix)/etc/brew-wrap
     fi
 fi
 
