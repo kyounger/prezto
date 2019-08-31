@@ -7,13 +7,13 @@
 #
 
 # Load dependencies.
-pmodload 'editor'
+# pmodload 'editor'
 
 # If the command doesn't exist externally, we need to fall back to the bundled
 # submodule.
-if (( ! $+commands[fasd] )); then
-  source "${0:h}/external/fasd" || return 1
-fi
+# if (( ! $+commands[fasd] )); then
+#   source "${0:h}/external/fasd" || return 1
+# fi
 
 #
 # Initialization
@@ -39,18 +39,18 @@ source "$cache_file"
 
 unset cache_file init_args
 
-function fasd_cd {
-  local fasd_ret="$(fasd -d "$@")"
-  if [[ -d "$fasd_ret" ]]; then
-    cd "$fasd_ret"
-  else
-    print "$fasd_ret"
-  fi
-}
+# function fasd_cd {
+#   local fasd_ret="$(fasd -d "$@")"
+#   if [[ -d "$fasd_ret" ]]; then
+#     cd "$fasd_ret"
+#   else
+#     print "$fasd_ret"
+#   fi
+# }
 
 #
 # Aliases
 #
 
 # Changes the current working directory interactively.
-alias j='fasd_cd -i'
+# alias j='fasd_cd -i'
